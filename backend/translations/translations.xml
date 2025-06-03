@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+    <!-- Allgemein -->
+    <text name="general" langDe="Allgemein" langEn="General" />
+    <text name="app_name" langDe="Authron" langEn="Authron" />
+    <text name="loading" langDe="Wird geladen..." langEn="Loading..." />
+    <text name="save" langDe="Speichern" langEn="Save" />
+    <text name="cancel" langDe="Abbrechen" langEn="Cancel" />
+    <text name="delete" langDe="Löschen" langEn="Delete" />
+    <text name="edit" langDe="Bearbeiten" langEn="Edit" />
+    <text name="add" langDe="Hinzufügen" langEn="Add" />
+    <text name="search" langDe="Suchen..." langEn="Search..." />
+    <text name="back" langDe="Zurück" langEn="Back" />
+    <text name="close" langDe="Schließen" langEn="Close" />
+    <text name="yes" langDe="Ja" langEn="Yes" />
+    <text name="no" langDe="Nein" langEn="No" />
+    <text name="confirm" langDe="Bestätigen" langEn="Confirm" />
+    <text name="error" langDe="Fehler" langEn="Error" />
+    <text name="success" langDe="Erfolg" langEn="Success" />
+    <text name="update" langDe="Aktualisieren" langEn="Update" />
+    <text name="refresh" langDe="Aktualisieren" langEn="Refresh" />
+    <text name="refreshed" langDe="Aktualisiert" langEn="Refreshed" />
+
+    <text name="copy" langDe="Kopieren" langEn="Copy" />
+    <text name="copied" langDe="Kopiert!" langEn="Copied!" />
+    <text name="generate" langDe="Generieren" langEn="Generate" />
+    <text name="show" langDe="Anzeigen" langEn="Show" />
+    <text name="hide" langDe="Verbergen" langEn="Hide" />
+    <text name="use" langDe="Verwenden" langEn="Use" />
+
+    <!-- Login und Registrierung -->
+    <text name="login" langDe="Anmelden" langEn="Login" />
+    <text name="register" langDe="Registrieren" langEn="Register" />
+    <text name="logout" langDe="Abmelden" langEn="Logout" />
+    <text name="email" langDe="E-Mail-Adresse" langEn="Email address" />
+    <text name="username" langDe="Benutzername" langEn="Username" />
+    <text name="password" langDe="Passwort" langEn="Password" />
+    <text name="confirm_password" langDe="Passwort bestätigen" langEn="Confirm password" />
+    <text name="forgot_password" langDe="Passwort vergessen?" langEn="Forgot password?" />
+    <text name="reset_password" langDe="Passwort zurücksetzen" langEn="Reset password" />
+    <text name="remember_me" langDe="Angemeldet bleiben" langEn="Remember me" />
+    <text name="no_account" langDe="Noch kein Konto?" langEn="Don't have an account?" />
+    <text name="create_account" langDe="Konto erstellen" langEn="Create account" />
+    <text name="have_account" langDe="Bereits ein Konto?" langEn="Already have an account?" />
+    <text name="sign_in" langDe="Anmelden" langEn="Sign in" />
+    <text name="signing_in" langDe="Anmeldung läuft..." langEn="Signing in..." />
+    <text name="registering" langDe="Registrierung läuft..." langEn="Registering..." />
+    <text name="full_name" langDe="Vollständiger Name" langEn="Full name" />
+    <text name="terms_agree" langDe="Ich stimme den" langEn="I agree to" />
+    <text name="terms_of_service" langDe="Nutzungsbedingungen" langEn="Terms of Service" />
+    <text name="privacy_policy" langDe="Datenschutzbestimmungen" langEn="Privacy Policy" />
+    <text name="and" langDe="und" langEn="and" />
+    <text name="to" langDe="zu" langEn="to" />
+    <text name="send_reset_instructions" langDe="Anweisungen senden" langEn="Send Reset Instructions" />
+    <text name="reset_instructions_sent" langDe="Zurücksetzungsanweisungen gesendet!" langEn="Reset instructions sent!" />
+    <text name="check_email" langDe="Bitte überprüfe deine E-Mail." langEn="Please check your email." />
+    <text name="didnt_receive_email" langDe="E-Mail nicht erhalten? Überprüfe deinen Spam-Ordner oder versuche es erneut." langEn="Didn't receive the email? Check your spam folder or try again." />
+    <text name="try_again" langDe="Erneut versuchen" langEn="Try again" />
+    <text name="back_to_sign_in" langDe="Zurück zur Anmeldung" langEn="Back to Sign In" />
+    <text name="contact_support" langDe="Brauchst du Hilfe? Kontaktiere" langEn="Need help? Contact" />
+    <text name="secured_with" langDe="Gesichert mit Ende-zu-Ende-Verschlüsselung" langEn="Secured with end-to-end encryption" />
+    <text name="secured_with_aes" langDe="Deine Daten sind mit AES-256-Verschlüsselung gesichert" langEn="Your data is secured with AES-256 encryption" />
+    <text name="login_failed" langDe="Anmeldung fehlgeschlagen. Bitte überprüfe deine Anmeldedaten." langEn="Login failed. Please check your credentials." />
+    <text name="invalid_input" langDe="Ungültige Eingabe. Bitte überprüfe deine Angaben." langEn="Invalid input. Please check your information." />
+    <text name="unexpected_error" langDe="Ein unerwarteter Fehler ist aufgetreten." langEn="An unexpected error occurred." />
+
+    <!-- Dashboard -->
+    <text name="dashboard" langDe="Dashboard" langEn="Dashboard" />
+    <text name="your_passwords" langDe="Deine Passwörter" langEn="Your passwords" />
+    <text name="favorites" langDe="Favoriten" langEn="Favorites" />
+    <text name="all_passwords" langDe="Alle Passwörter" langEn="All passwords" />
+    <text name="no_passwords" langDe="Du hast noch keine Passwörter gespeichert." langEn="You haven't saved any passwords yet." />
+    <text name="add_password" langDe="Passwort hinzufügen" langEn="Add password" />
+    <text name="edit_password" langDe="Passwort bearbeiten" langEn="Edit password" />
+    <text name="delete_password" langDe="Passwort löschen" langEn="Delete password" />
+    <text name="password_strength" langDe="Passwortstärke" langEn="Password strength" />
+    <text name="very_weak" langDe="Sehr schwach" langEn="Very weak" />
+    <text name="weak" langDe="Schwach" langEn="Weak" />
+    <text name="medium" langDe="Mittel" langEn="Medium" />
+    <text name="good" langDe="Gut" langEn="Good" />
+    <text name="strong" langDe="Stark" langEn="Strong" />
+    <text name="very_strong" langDe="Sehr stark" langEn="Very strong" />
+    <text name="passwords_loading" langDe="Passwörter werden geladen..." langEn="Loading passwords..." />
+    <text name="show_entries" langDe="Einträge anzeigen" langEn="Show entries" />
+    <text name="hide_entries" langDe="Einträge schließen" langEn="Hide entries" />
+    <text name="try_again" langDe="Erneut versuchen" langEn="Try again" />
+    <text name="create_first_password" langDe="Erstelle dein erstes Passwort" langEn="Create your first password" />
+    <text name="groups" langDe="Gruppen" langEn="Groups" />
+    <text name="all_passwords" langDe="Alle Passwörter" langEn="All passwords" />
+    <text name="no_selection" langDe="Keine Auswahl" langEn="No selection" />
+    <text name="select_entry" langDe="Wähle links einen Eintrag aus oder erstelle einen neuen." langEn="Select an entry from the left or create a new one." />
+    <text name="new_entry" langDe="Neuer Eintrag" langEn="New entry" />
+    <text name="back_to_list" langDe="Zurück zur Liste" langEn="Back to list" />
+    <text name="add_new_entry" langDe="Neuen Eintrag hinzufügen" langEn="Add new entry" />
+    <text name="edit_entry" langDe="Eintrag bearbeiten" langEn="Edit entry" />
+
+    <!-- Passwort-Details -->
+    <text name="label" langDe="Bezeichnung" langEn="Label" />
+    <text name="username_email" langDe="Benutzername/E-Mail" langEn="Username/Email" />
+    <text name="website" langDe="Webseite URL (optional)" langEn="Website URL (optional)" />
+    <text name="category" langDe="Kategorie" langEn="Category" />
+    <text name="notes" langDe="Notizen" langEn="Notes" />
+    <text name="last_updated" langDe="Zuletzt aktualisiert" langEn="Last updated" />
+    <text name="last_used" langDe="Zuletzt verwendet" langEn="Last used" />
+    <text name="mark_favorite" langDe="Als Favorit markieren" langEn="Mark as favorite" />
+    <text name="copy_username" langDe="Benutzername kopieren" langEn="Copy username" />
+    <text name="copy_password" langDe="Passwort kopieren" langEn="Copy password" />
+    <text name="show_password" langDe="Passwort anzeigen" langEn="Show password" />
+    <text name="hide_password" langDe="Passwort verbergen" langEn="Hide password" />
+    <text name="password_generator" langDe="Passwort-Generator" langEn="Password generator" />
+    <text name="generate_password" langDe="Passwort generieren" langEn="Generate password" />
+    <text name="password_being_decrypted" langDe="Wird entschlüsselt..." langEn="Being decrypted..." />
+    <text name="password_requirements" langDe="Passwort erfüllt nicht alle Anforderungen!" langEn="Password doesn't meet all requirements!" />
+    <text name="weak_password_hint" langDe="Zu kurz oder zu einfach" langEn="Too short or too simple" />
+    <text name="add_chars_hint" langDe="Füge Groß- und Kleinbuchstaben hinzu" langEn="Add upper and lowercase letters" />
+    <text name="add_numbers_symbols" langDe="Füge Zahlen und Sonderzeichen hinzu" langEn="Add numbers and special characters" />
+    <text name="medium_strength_hint" langDe="Mittlere Stärke, aber noch verbesserungswürdig" langEn="Medium strength, but could be improved" />
+    <text name="make_longer" langDe="Mache das Passwort länger" langEn="Make the password longer" />
+    <text name="use_more_chars" langDe="Verwende mehr unterschiedliche Zeichen" langEn="Use more different characters" />
+    <text name="strong_password" langDe="Starkes Passwort!" langEn="Strong password!" />
+    <text name="good_mix" langDe="Gute Mischung aus Zeichen" langEn="Good mix of characters" />
+    <text name="sufficient_length" langDe="Ausreichende Länge" langEn="Sufficient length" />
+    <text name="are_you_sure" langDe="Bist du sicher?" langEn="Are you sure?" />
+    <text name="delete_confirm_message" langDe="Möchtest du wirklich den Eintrag &quot;{label}&quot; löschen? Diese Aktion kann nicht rückgängig gemacht werden." langEn="Do you really want to delete the entry &quot;{label}&quot;? This action cannot be undone." />    <!-- Passwort-Generator -->
+    <text name="password_generator_title" langDe="Passwort Generator" langEn="Password Generator" />
+    <text name="password_length" langDe="Passwortlänge" langEn="Password Length" />
+    <text name="characters" langDe="Zeichen" langEn="characters" />
+    <text name="included_chars" langDe="Enthaltene Zeichen" langEn="Included Characters" />
+    <text name="uppercase" langDe="Großbuchstaben (A-Z)" langEn="Uppercase letters (A-Z)" />
+    <text name="lowercase" langDe="Kleinbuchstaben (a-z)" langEn="Lowercase letters (a-z)" />
+    <text name="numbers" langDe="Zahlen (0-9)" langEn="Numbers (0-9)" />
+    <text name="symbols" langDe="Sonderzeichen (!@#$%^&amp;*)" langEn="Special characters (!@#$%^&amp;*)" />    <text name="copy_to_clipboard" langDe="In die Zwischenablage kopieren" langEn="Copy to clipboard" />
+    <text name="generate_new" langDe="Neues Passwort generieren" langEn="Generate new password" />
+    <text name="password_tips" langDe="Tipps für sichere Passwörter:" langEn="Tips for secure passwords:" />
+    <text name="tip_length" langDe="Verwende Passwörter mit mindestens 16 Zeichen" langEn="Use passwords with at least 16 characters" />
+    <text name="tip_variety" langDe="Kombiniere verschiedene Zeichenarten" langEn="Combine different types of characters" />
+    <text name="tip_unique" langDe="Verwende für jeden Dienst ein eigenes Passwort" langEn="Use a different password for each service" />
+    <text name="tip_manager" langDe="Speichere Passwörter sicher in diesem Passwort-Manager" langEn="Store passwords securely in this password manager" />
+    <text name="select_char_type" langDe="Bitte wähle mindestens einen Zeichentyp" langEn="Please select at least one character type" />
+    <text name="use_password" langDe="Passwort verwenden" langEn="Use password" />
+    <text name="strength_not_rated" langDe="Nicht bewertet" langEn="Not rated" />
+    <text name="open_website" langDe="Webseite öffnen" langEn="Open website" />
+
+    <!-- Einstellungen -->
+    <text name="settings" langDe="Einstellungen" langEn="Settings" />
+    <text name="general_settings" langDe="Allgemeine Einstellungen" langEn="General settings" />
+    <text name="security_settings" langDe="Sicherheitseinstellungen" langEn="Security settings" />
+    <text name="language" langDe="Sprache" langEn="Language" />
+    <text name="dark_mode" langDe="Dunkler Modus" langEn="Dark mode" />
+    <text name="show_notifications" langDe="Benachrichtigungen anzeigen" langEn="Show notifications" />
+    <text name="auto_logout" langDe="Automatischer Logout" langEn="Automatic logout" />
+    <text name="auto_logout_inactive" langDe="Bei Inaktivität automatisch abmelden nach:" langEn="Automatically log out after inactivity:" />
+    <text name="change_master_password" langDe="Master-Passwort ändern" langEn="Change master password" />
+    <text name="current_password" langDe="Aktuelles Passwort" langEn="Current password" />
+    <text name="new_password" langDe="Neues Passwort" langEn="New password" />
+    <text name="never_logout" langDe="Du wirst nie automatisch abgemeldet." langEn="You will never be automatically logged out." />
+    <text name="logout_timer" langDe="Du wirst nach {minutes} Minuten Inaktivität abgemeldet." langEn="You will be logged out after {minutes} minutes of inactivity." />
+    <text name="custom_minutes" langDe="Benutzerdefiniert (in Minuten):" langEn="Custom (in minutes):" />
+    <text name="data_security" langDe="Datensicherheit" langEn="Data security" />
+    <text name="encryption_active" langDe="End-to-End Verschlüsselung aktiviert" langEn="End-to-end encryption active" />
+    <text name="two_factor_auth" langDe="Zwei-Faktor-Authentifizierung" langEn="Two-factor authentication" />
+    <text name="security_notice" langDe="Sicherheitshinweis" langEn="Security notice" />
+    <text name="last_login" langDe="Dein letzter Login war am {date} um {time} Uhr. Wenn du es nicht warst, ändere bitte sofort dein Passwort." langEn="Your last login was on {date} at {time}. If this wasn't you, please change your password immediately." />
+    <text name="password_requirements_title" langDe="Passwortanforderungen:" langEn="Password requirements:" />
+    <text name="req_min_length" langDe="Mindestens 12 Zeichen" langEn="At least 12 characters" />
+    <text name="req_lowercase" langDe="Mindestens ein Kleinbuchstabe" langEn="At least one lowercase letter" />
+    <text name="req_uppercase" langDe="Mindestens ein Großbuchstabe" langEn="At least one uppercase letter" />
+    <text name="req_number" langDe="Mindestens eine Zahl" langEn="At least one number" />
+    <text name="req_special" langDe="Mindestens ein Sonderzeichen" langEn="At least one special character" />
+    <text name="password_no_match" langDe="Die Passwörter stimmen nicht überein!" langEn="Passwords don't match!" />
+    <text name="password_too_weak" langDe="Das gewählte Passwort ist zu schwach. Bitte wähle ein stärkeres Passwort." langEn="The chosen password is too weak. Please choose a stronger password." />
+    <text name="password_changed" langDe="Passwort erfolgreich geändert!" langEn="Password successfully changed!" />
+    <text name="password_auto_hide" langDe="Passwörter automatisch ausblenden nach (Sekunden):" langEn="Automatically hide passwords after (seconds):" />
+    <text name="settings_saved" langDe="Einstellungen erfolgreich gespeichert" langEn="Settings successfully saved" />
+    <text name="deactivated" langDe="Deaktiviert" langEn="Deactivated" />
+    <text name="logout_in" langDe="Logout in {minutes}m {seconds}s" langEn="Logout in {minutes}m {seconds}s" />
+    <text name="save_settings" langDe="Einstellungen speichern" langEn="Save settings" />
+    <text name="saved" langDe="Gespeichert" langEn="Saved" />
+
+    <!-- Admin -->
+    <text name="admin_panel" langDe="Admin-Bereich" langEn="Admin Panel" />
+    <text name="statistics" langDe="Statistiken" langEn="Statistics" />
+    <text name="system_monitoring" langDe="Systemüberwachung" langEn="System Monitoring" />
+    <text name="user_management" langDe="Benutzerverwaltung" langEn="User Management" />
+    <text name="access_denied_message" langDe="Du hast keine Berechtigung, auf den Admin-Bereich zuzugreifen." langEn="You don't have permission to access the admin area." />
+    <text name="admin_stats_error" langDe="Statistiken konnten nicht geladen werden." langEn="Statistics could not be loaded." />
+    <text name="registered_users_count" langDe="Registrierte Benutzer" langEn="Registered Users" />
+    <text name="stored_passwords_count" langDe="Gespeicherte Passwörter" langEn="Stored Passwords" />
+    <text name="status_active" langDe="Aktiv" langEn="Active" />
+    <text name="status_inactive" langDe="Inaktive" langEn="Inactive" />
+
+    <text name="status_warning" langDe="Warnung" langEn="Warning" />
+    <text name="status_error" langDe="Fehler" langEn="Error" />
+    <text name="top_password_categories" langDe="Top Passwort-Kategorien" langEn="Top Password Categories" />
+    <text name="no_categories_found" langDe="Keine Kategorien gefunden" langEn="No categories found" />
+    <text name="security_status" langDe="Sicherheitsstatus" langEn="Security Status" />
+    <text name="ssl_certificate" langDe="SSL-Zertifikat" langEn="SSL Certificate" />
+    <text name="firewall_status" langDe="Firewall-Status" langEn="Firewall Status" />
+    <text name="last_backup" langDe="Letzte Sicherung" langEn="Last Backup" />
+    <text name="anomaly_detection" langDe="Anomalie-Erkennung" langEn="Anomaly Detection" />
+    <text name="encryption_status" langDe="Verschlüsselungsstatus" langEn="Encryption Status" />
+    <text name="add_user" langDe="Benutzer hinzufügen" langEn="Add User" />
+    <text name="search_users" langDe="Benutzer suchen..." langEn="Search users..." />
+    <text name="no_users_found" langDe="Keine Benutzer gefunden" langEn="No users found" />
+    <text name="edit_user" langDe="Benutzer bearbeiten" langEn="Edit User" />
+    <text name="user_information" langDe="Benutzerinformationen" langEn="User Information" />
+    <text name="user_status" langDe="Benutzerstatus" langEn="User Status" />
+    <text name="can_login" langDe="Benutzer kann sich anmelden" langEn="User can log in" />
+    <text name="admin_access" langDe="Zugriff auf Admin-Funktionen" langEn="Access to admin functions" />
+    <text name="delete_user" langDe="Benutzer löschen" langEn="Delete User" />
+    <text name="delete_user_confirmation" langDe="Möchtest du wirklich den Benutzer löschen? Alle Passwörter dieses Benutzers werden ebenfalls gelöscht. Diese Aktion kann nicht rückgängig gemacht werden." langEn="Do you really want to delete this user? All passwords of this user will also be deleted. This action cannot be undone." />
+    <text name="add_new_user" langDe="Neuen Benutzer hinzufügen" langEn="Add New User" />
+    <text name="create_as_admin" langDe="Benutzer als Administrator erstellen" langEn="Create user as administrator" />
+    <text name="user_email_notice" langDe="Der Benutzer erhält eine E-Mail mit Anmeldeinformationen." langEn="The user will receive an email with login information." />
+    <text name="create_user" langDe="Benutzer erstellen" langEn="Create User" />
+    <text name="fill_required_fields" langDe="Bitte alle Pflichtfelder ausfüllen." langEn="Please fill in all required fields." />
+    <text name="authentication" langDe="Authentifizierung" langEn="Authentication" />
+    <text name="database" langDe="Datenbank" langEn="Database" />
+    <text name="password_encryption" langDe="Passwort-Verschlüsselung" langEn="Password Encryption" />
+    <text name="api_server" langDe="API-Server" langEn="API Server" />
+    <text name="user_role" langDe="Rolle" langEn="Role" />
+    <text name="user_registered" langDe="Registriert" langEn="Registered" />
+    <text name="user_passwords" langDe="Passwörter" langEn="Passwords" />
+    <text name="user_actions" langDe="Aktionen" langEn="Actions" />
+    <text name="valid_days" langDe="Gültig (noch {days} Tage)" langEn="Valid (still {days} days)" />
+    <text name="today_time" langDe="Heute, {time} Uhr" langEn="Today, {time}" />
+    <text name="encryption_aes" langDe="AES-256" langEn="AES-256" />
+    <!-- Meldungen -->
+    <text name="password_changed" langDe="Passwort erfolgreich geändert" langEn="Password successfully changed" />
+    <text name="settings_saved" langDe="Einstellungen erfolgreich gespeichert" langEn="Settings successfully saved" />
+    <text name="password_copied" langDe="Passwort in die Zwischenablage kopiert" langEn="Password copied to clipboard" />
+    <text name="username_copied" langDe="Benutzername in die Zwischenablage kopiert" langEn="Username copied to clipboard" />
+    <text name="password_requirements" langDe="Das Passwort muss mindestens 12 Zeichen lang sein und Groß- und Kleinbuchstaben, Zahlen und Sonderzeichen enthalten." langEn="Password must be at least 12 characters long and include uppercase and lowercase letters, numbers, and special characters." />
+    <text name="delete_confirm" langDe="Bist du sicher, dass du diesen Eintrag löschen möchtest? Diese Aktion kann nicht rückgängig gemacht werden." langEn="Are you sure you want to delete this entry? This action cannot be undone." />
+    <text name="session_expired" langDe="Deine Sitzung ist abgelaufen. Bitte melde dich erneut an." langEn="Your session has expired. Please login again." />
+    <text name="login_required" langDe="Anmeldung erforderlich" langEn="Login required" />
+    <text name="loading_data" langDe="Daten werden geladen..." langEn="Loading data..." />
+    <text name="no_data" langDe="Keine Daten gefunden" langEn="No data found" />
+    <text name="error_loading" langDe="Fehler beim Laden der Daten" langEn="Error loading data" />
+    <!-- Rollen -->
+    <text name="role_admin" langDe="Administrator" langEn="Administrator" />
+    <text name="role_user" langDe="Benutzer" langEn="User" />
+
+    <!-- 2FA -->
+    <text name="two_factor_auth" langDe="Zwei-Faktor-Authentifizierung" langEn="Two-factor authentication" />
+    <text name="setup_two_factor" langDe="Zwei-Faktor-Authentifizierung einrichten" langEn="Set up two-factor authentication" />
+    <text name="twofa_setup_title" langDe="Zwei-Faktor-Authentifizierung einrichten" langEn="Set up two-factor authentication" />
+    <text name="twofa_setup_description" langDe="Erhöhe die Sicherheit deines Kontos, indem du die Zwei-Faktor-Authentifizierung aktivierst. Du benötigst eine Authenticator-App wie Google Authenticator, Authy oder Microsoft Authenticator." langEn="Increase the security of your account by enabling two-factor authentication. You'll need an authenticator app like Google Authenticator, Authy, or Microsoft Authenticator." />
+    <text name="twofa_setup_start" langDe="Einrichtung starten" langEn="Start setup" />
+    <text name="twofa_scan_title" langDe="QR-Code scannen" langEn="Scan QR code" />
+    <text name="twofa_scan_description" langDe="Scanne diesen QR-Code mit deiner Authenticator-App. Alternativ kannst du den Schlüssel auch manuell eingeben." langEn="Scan this QR code with your authenticator app. Alternatively, you can manually enter the key." />
+    <text name="twofa_manual_entry" langDe="Manueller Schlüssel:" langEn="Manual key:" />
+    <text name="twofa_verification_code" langDe="Bestätigungscode" langEn="Verification code" />
+    <text name="twofa_code" langDe="Authenticator-Code" langEn="Authenticator code" />
+    <text name="twofa_prompt" langDe="Gib den 6-stelligen Code aus deiner Authenticator-App ein" langEn="Enter the 6-digit code from your authenticator app" />
+    <text name="verifying" langDe="Wird überprüft..." langEn="Verifying..." />
+    <text name="verify" langDe="Verifizieren" langEn="Verify" />
+    <text name="twofa_setup_success" langDe="2FA erfolgreich aktiviert!" langEn="2FA successfully activated!" />
+    <text name="twofa_setup_success_description" langDe="Dein Konto ist jetzt mit Zwei-Faktor-Authentifizierung gesichert. Bei der Anmeldung musst du jetzt einen Code aus deiner Authenticator-App eingeben." langEn="Your account is now secured with two-factor authentication. You'll now need to enter a code from your authenticator app when logging in." />
+    <text name="twofa_setup_error" langDe="Fehler bei der 2FA-Einrichtung" langEn="Error setting up 2FA" />
+    <text name="twofa_code_invalid" langDe="Bitte gib einen gültigen 6-stelligen Code ein" langEn="Please enter a valid 6-digit code" />
+    <text name="twofa_code_incorrect" langDe="Der eingegebene Code ist nicht korrekt" langEn="The code you entered is incorrect" />
+    <text name="twofa_verification_error" langDe="Fehler bei der Verifikation" langEn="Verification error" />
+    <text name="disable_twofa" langDe="Zwei-Faktor-Authentifizierung deaktivieren" langEn="Disable two-factor authentication" />
+    <text name="disable_twofa_confirm" langDe="Bist du sicher, dass du die Zwei-Faktor-Authentifizierung deaktivieren möchtest? Dies verringert die Sicherheit deines Kontos." langEn="Are you sure you want to disable two-factor authentication? This will reduce the security of your account." />
+    <text name="twofa_enter_password" langDe="Bitte gib dein Passwort ein, um fortzufahren" langEn="Please enter your password to continue" />
+
+    <!-- TOTP-bezogene Übersetzungen -->
+    <text name="totp_enabled" langDe="TOTP aktiviert" langEn="TOTP enabled" />
+    <text name="add_totp_authenticator" langDe="TOTP-Authenticator hinzufügen" langEn="Add TOTP authenticator" />
+    <text name="totp_setup_info" langDe="Authenticator-App einrichten" langEn="Set up authenticator app" />
+    <text name="totp_setup_instruction" langDe="Gib den geheimen Schlüssel (Secret Key) aus deiner 2FA-Einrichtung ein." langEn="Enter the secret key from your 2FA setup." />
+    <text name="totp_secret" langDe="TOTP-Secret" langEn="TOTP secret" />
+    <text name="totp_secret_help" langDe="Hinweise zum TOTP-Secret:" langEn="TOTP secret notes:" />
+    <text name="totp_secret_help_1" langDe="Du findest diesen bei der Einrichtung von 2FA auf Webseiten" langEn="You can find this when setting up 2FA on websites" />
+    <text name="totp_secret_help_2" langDe="Meistens als 'Manueller Schlüssel' oder 'Secret Key' bezeichnet" langEn="Usually labeled as 'Manual key' or 'Secret key'" />
+    <text name="totp_secret_help_3" langDe="Besteht aus Buchstaben und Zahlen (z.B. ABCDEFGHIJKLMNOP)" langEn="Consists of letters and numbers (e.g. ABCDEFGHIJKLMNOP)" />
+    <text name="please_enter_totp_secret" langDe="Bitte gib den TOTP-Secret ein" langEn="Please enter the TOTP secret" />
+    <text name="totp_setup_error" langDe="Fehler beim Einrichten des TOTP-Secrets" langEn="Error setting up TOTP secret" />
+    <text name="saving" langDe="Wird gespeichert..." langEn="Saving..." />
+    <text name="totp_setup_success" langDe="TOTP erfolgreich eingerichtet!" langEn="TOTP successfully set up!" />
+    <text name="totp_setup_success_description" langDe="Der TOTP-Generator für diesen Eintrag ist jetzt aktiv." langEn="The TOTP generator for this entry is now active." />
+    <text name="current_code" langDe="Aktueller Code" langEn="Current code" />
+    <text name="refreshes_in" langDe="Aktualisierung in" langEn="Refreshes in" />
+    <text name="seconds" langDe="Sekunden" langEn="seconds" />
+    <text name="setup" langDe="Einrichten" langEn="Set up" />
+    <text name="disable" langDe="Deaktivieren" langEn="Disable" />
+
+<!-- Backup-bezogene Übersetzungen -->
+    <text name="backup_management" langDe="Backup-Verwaltung" langEn="Backup Management" />
+    <text name="create_backup" langDe="Backup erstellen" langEn="Create Backup" />
+    <text name="creating_backup" langDe="Backup wird erstellt..." langEn="Creating Backup..." />
+    <text name="automatic_backups" langDe="Automatische Backups" langEn="Automatic Backups" />
+    <text name="auto_backup_enabled" langDe="Automatische Backups aktiviert" langEn="Automatic backups enabled" />
+    <text name="auto_backup_disabled" langDe="Automatische Backups deaktiviert" langEn="Automatic backups disabled" />
+    <text name="backup_interval" langDe="Backup-Intervall" langEn="Backup Interval" />
+    <text name="hour" langDe="Stunde" langEn="Hour" />
+    <text name="hours" langDe="Stunden" langEn="Hours" />
+    <text name="days" langDe="Tage" langEn="Days" />
+    <text name="existing_backups" langDe="Vorhandene Backups" langEn="Existing Backups" />
+    <text name="backup_name" langDe="Backup-Name" langEn="Backup Name" />
+    <text name="creation_date" langDe="Erstellungsdatum" langEn="Creation Date" />
+    <text name="size" langDe="Größe" langEn="Size" />
+    <text name="error_loading_backups" langDe="Fehler beim Laden der Backups" langEn="Error loading backups" />
+    <text name="backup_creation_error" langDe="Fehler beim Erstellen des Backups" langEn="Error creating backup" />
+    <text name="no_backups_found" langDe="Keine Backups gefunden" langEn="No backups found" />
+
+    <text name="data_management" langDe="Datenverwaltung" langEn="Data Management" />
+    <text name="import_export_title" langDe="Import/Export" langEn="Import/Export" />
+    <text name="import_export_description" langDe="Exportiere deine Passwörter für Backups oder importiere sie von anderen Passwort-Managern." langEn="Export your passwords for backups or import them from other password managers." />
+    <text name="export_passwords" langDe="Passwörter exportieren" langEn="Export Passwords" />
+    <text name="import_passwords" langDe="Passwörter importieren" langEn="Import Passwords" />
+    <text name="backup_info" langDe="Backup-Informationen" langEn="Backup Information" />
+    <text name="backup_description" langDe="Regelmäßige Backups sind wichtig für die Sicherheit deiner Daten. Wir empfehlen, mindestens einmal pro Woche ein Backup zu erstellen." langEn="Regular backups are important for the security of your data. We recommend creating a backup at least once a week." />
+    <text name="export_import_passwords" langDe="Passwörter importieren/exportieren" langEn="Import/Export Passwords" />
+    <text name="export" langDe="Exportieren" langEn="Export" />
+    <text name="import" langDe="Importieren" langEn="Import" />
+    <text name="export_description" langDe="Exportiere deine Passwörter in einem gewählten Format. Diese Datei sollte sicher aufbewahrt werden, da sie unverschlüsselte Passwörter enthält." langEn="Export your passwords in a chosen format. This file should be kept secure as it contains unencrypted passwords." />
+    <text name="export_format" langDe="Exportformat" langEn="Export format" />
+    <text name="export_warning" langDe="Die exportierte Datei enthält unverschlüsselte Passwörter. Bewahre sie sicher auf und lösche sie nach Gebrauch." langEn="The exported file contains unencrypted passwords. Keep it secure and delete it after use." />
+    <text name="import_description" langDe="Importiere Passwörter aus einer CSV- oder JSON-Datei. Bereits vorhandene Passwörter mit identischem Titel und Benutzernamen werden übersprungen." langEn="Import passwords from a CSV or JSON file. Existing passwords with identical title and username will be skipped." />
+    <text name="select_file" langDe="Datei auswählen" langEn="Select file" />
+    <text name="file_selected" langDe="Ausgewählt: {filename}" langEn="Selected: {filename}" />
+    <text name="import_info" langDe="Die Import-Funktion unterstützt JSON- und CSV-Dateien. Bereits vorhandene Einträge werden übersprungen." langEn="The import function supports JSON and CSV files. Existing entries will be skipped." />
+    <text name="export_success" langDe="Export erfolgreich" langEn="Export successful" />
+    <text name="export_error" langDe="Fehler beim Exportieren der Passwörter" langEn="Error exporting passwords" />
+    <text name="no_file_selected" langDe="Keine Datei ausgewählt" langEn="No file selected" />
+    <text name="import_success" langDe="Import erfolgreich! {imported} importiert, {skipped} übersprungen." langEn="Import successful! {imported} imported, {skipped} skipped." />
+    <text name="import_error" langDe="Fehler beim Importieren der Passwörter" langEn="Error importing passwords" />
+    <text name="invalid_file_format" langDe="Ungültiges Dateiformat. Nur JSON und CSV werden unterstützt." langEn="Invalid file format. Only JSON and CSV are supported." />
+
+    <text name="share_send_password" langDe="Passwort senden" langEn="Send password" />
+    <text name="share_password" langDe="Passwort teilen" langEn="Share password" />
+    <text name="sharing_password" langDe="Passwort wird geteilt" langEn="Sharing password" />
+    <text name="recipient_email" langDe="E-Mail des Empfängers" langEn="Recipient's email" />
+    <text name="share_message" langDe="Nachricht" langEn="Message" />
+    <text name="share_password_description" langDe="Teile dein Passwort sicher mit anderen. Der Empfänger erhält eine E-Mail mit einem Link zum Passwort." langEn="Share your password securely with others. The recipient will receive an email with a link to the password." />
+    <text name="share_password_success" langDe="Passwort erfolgreich geteilt!" langEn="Password successfully shared!" />
+    <text name="share_info" langDe="Das Passwort wird unverschlüsselt geteilt. Stelle sicher, dass du dem Empfänger vertraust." langEn="The password will be shared unencrypted. Make sure you trust the recipient." />
+</translations>

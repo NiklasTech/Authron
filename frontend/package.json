@@ -1,0 +1,95 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "electron.cjs",
+  "description": "Secure Password Manager with end-to-end encryption",
+  "author": "NiklasTech",
+  "homepage": "./",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "electron": "electron .",
+    "electron-dev": "concurrently \"npm run dev\" \"wait-on http://localhost:5173 && cross-env NODE_ENV=development electron .\"",
+    "build-backend": "node scripts/build-backend.cjs",
+    "build-electron": "npm run build && npm run build-backend && electron-builder",
+    "pack-electron": "npm run build && npm run build-backend && electron-builder --dir",
+    "build-electron-full": "npm run build && npm run build-backend && electron-builder",
+    "pack-electron-full": "npm run build && npm run build-backend && electron-builder --dir"
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.2.2",
+    "@tailwindcss/vite": "^4.1.4",
+    "axios": "^1.8.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^7.5.1",
+    "tailwindcss": "^4.1.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^8.0.0",
+    "cross-env": "^7.0.3",
+    "electron": "^28.0.0",
+    "electron-builder": "^24.0.0",
+    "electronmon": "^2.0.2",
+    "eslint": "^9.22.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.26.1",
+    "vite": "^6.3.1",
+    "wait-on": "^7.0.0"
+  },
+  "build": {
+    "appId": "com.authron.passwordmanager",
+    "productName": "Authron Password Manager",
+    "asarUnpack": [
+      "dist/**/*",
+      "assets"
+    ],
+    "directories": {
+      "output": "dist-electron"
+    },
+    "files": [
+      "dist/**/*",
+      "electron.cjs",
+      "package.json",
+      "assets/**/*"
+    ],
+    "extraResources": [
+      {
+        "from": "../dist/authron-backend",
+        "to": "authron-backend"
+      }
+    ],
+    "mac": {
+      "category": "public.app-category.productivity",
+      "target": "dmg",
+      "icon": "assets/icon.icns"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "assets/icon.png",
+      "category": "Utility"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  }
+}
