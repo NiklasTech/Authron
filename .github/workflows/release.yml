@@ -1,0 +1,93 @@
+name: Auto Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.12'
+    
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+    
+    - name: Install Backend Dependencies
+      run: |
+        cd backend
+        python -m venv venv
+        source venv/bin/activate
+        pip install -r requirements.txt
+    
+    - name: Build Backend
+      run: |
+        cd backend
+        source venv/bin/activate
+        python build_executable.py
+    
+    - name: Install Frontend Dependencies
+      run: |
+        cd frontend
+        npm install
+    
+    - name: Build Frontend
+      run: |
+        cd frontend
+        npm run build
+    
+    - name: Build Electron Apps
+      run: |
+        cd frontend
+        npm run build-electron
+    
+    - name: Create Release
+      uses: softprops/action-gh-release@v1
+      with:
+        name: Authron ${{ github.ref_name }}
+        body: |
+          # 🎉 Authron ${{ github.ref_name }}
+          
+          ## ✨ Features
+          - 🔐 Secure password storage with AES-256 encryption
+          - 🔧 Password generator with customizable settings
+          - 🗂️ Categories and favorites for better organization
+          - 📊 Password strength analysis with visual feedback
+          - 🛠️ Admin panel for user management
+          - 🔒 Two-factor authentication (2FA/TOTP)
+          - 🌐 Multi-language support (German/English)
+          - 💡 Modern, responsive UI
+          - ⏱️ Auto-logout after inactivity
+          - 🧩 TOTP generator for external services
+          - 📥 Import/Export passwords
+          - �� Password sharing with trusted contacts
+          - 🖥️ Desktop app with Electron
+          
+          ## 📦 Downloads
+          - **Windows:** `Authron-Setup-*.exe`
+          - **macOS:** `Authron-*.dmg`
+          - **Linux:** `Authron-*.AppImage`
+          - **Web/Server:** `authron-backend` + `dist.zip`
+          
+          ## 🔐 Default Admin Account
+          - Email: `admin@example.com`
+          - Password: `Admin@1234`
+        files: |
+          dist/authron-backend*
+          frontend/dist-electron/*.exe
+          frontend/dist-electron/*.dmg
+          frontend/dist-electron/*.AppImage
+          frontend/dist-electron/*.zip
+        draft: false
+        prerelease: false
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
