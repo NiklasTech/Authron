@@ -13,15 +13,18 @@ mkdir -p "$INSTALL_DIR"
 mkdir -p "$DESKTOP_DIR"
 
 echo "Downloading latest release..."
-LATEST_URL=$(curl -s "https://api.github.com/repos/$REPO/releases/latest" | grep -o 'https://.*\.AppImage' | head -1)
+LATEST_URL=$(curl -s "https://api.github.com/repos/$REPO/releases/latest" | grep -o 'https://.*Authron\.AppImage' | head -1)
 
 if [ -z "$LATEST_URL" ]; then
     echo "Error: Could not find AppImage download URL"
     exit 1
 fi
 
+echo "Downloading from: $LATEST_URL"
 wget -O "$INSTALL_DIR/authron.AppImage" "$LATEST_URL"
 chmod +x "$INSTALL_DIR/authron.AppImage"
+
+echo "✅ AppImage downloaded and made executable"
 
 echo "Creating desktop entry..."
 cat > "$DESKTOP_DIR/authron.desktop" << EOF
@@ -42,6 +45,7 @@ if [ -d "$HOME/.local/share/icons" ]; then
 fi
 
 echo "Authron has been installed successfully!"
+echo ""
 echo "You can now:"
 echo "  - Run from terminal: authron"
 echo "  - Find it in your applications menu"
@@ -55,6 +59,10 @@ fi
 
 ln -sf "$INSTALL_DIR/authron.AppImage" "$INSTALL_DIR/authron" 2>/dev/null || true
 
+echo ""
+echo "⚠️  Note: If the AppImage doesn't run, you may need to install FUSE:"
+echo "   Ubuntu/Debian: sudo apt install libfuse2"
+echo "   Fedora: sudo dnf install fuse"
 echo ""
 echo "Documentation: https://github.com/$REPO"
 echo "Issues: https://github.com/$REPO/issues"

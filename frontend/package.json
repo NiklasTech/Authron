@@ -51,7 +51,7 @@
   },
   "build": {
     "appId": "com.authron.passwordmanager",
-    "productName": "Authron Password Manager",
+    "productName": "Authron",
     "asarUnpack": [
       "dist/**/*",
       "assets"
@@ -81,15 +81,25 @@
       "icon": "assets/icon.ico"
     },
     "linux": {
-      "target": "AppImage",
+      "target": {
+        "target": "AppImage",
+        "arch": [
+          "x64"
+        ]
+      },
       "icon": "assets/icon.png",
-      "category": "Utility"
+      "category": "Utility",
+      "executableName": "authron",
+      "artifactName": "Authron.AppImage",
+      "synopsis": "Secure Password Manager",
+      "description": "Authron Password Manager with end-to-end encryption"
     },
     "nsis": {
       "oneClick": false,
       "allowToChangeInstallationDirectory": true,
       "createDesktopShortcut": true,
-      "createStartMenuShortcut": true
+      "createStartMenuShortcut": true,
+      "artifactName": "Authron-Setup.exe"
     }
   }
 }

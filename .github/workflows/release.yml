@@ -45,9 +45,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: linux
-          path: |
-            dist/authron-backend
-            frontend/dist-electron/*.AppImage
+          path: frontend/dist-electron/*.AppImage
 
   build-windows:
     runs-on: windows-latest
@@ -88,9 +86,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: windows
-          path: |
-            dist/authron-backend.exe
-            frontend/dist-electron/*.exe
+          path: frontend/dist-electron/*.exe
 
   build-macos:
     runs-on: macos-latest
@@ -131,9 +127,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: macos
-          path: |
-            dist/authron-backend
-            frontend/dist-electron/*.dmg
+          path: frontend/dist-electron/*.dmg
 
   create-release:
     needs: [build-linux, build-windows, build-macos]
@@ -165,19 +159,29 @@ jobs:
             - 🤝 Password sharing with trusted contacts
             - 🖥️ Desktop app with Electron
             ## 📦 Downloads
-            - **Windows:** `.exe` (Desktop app + server)
-            - **macOS:** `.dmg` (Desktop app + server)
-            - **Linux:** `.AppImage` (Desktop app + server)
+            - **Windows:** `.exe` (Desktop app)
+            - **macOS:** `.dmg` (Desktop app)
+            - **Linux:** `.AppImage` (Desktop app)
             ## 🔐 Default Admin Account
             - Email: `admin@example.com`
             - Password: `Admin@1234`
             ## 🚀 Installation
-            - **Desktop app:** Just download and run the appropriate file
-            - **Web server:** Download and run the backend file, then open your browser
+            ### Linux
+            ```bash
+            # Download
+            wget https://github.com/niklastech/authron/releases/latest/download/Authron.AppImage
+            # Make executable (REQUIRED)
+            chmod +x Authron.AppImage
+            # Run
+            ./Authron.AppImage
+            ```
+            ### Windows
+            Download and run the `.exe` installer
+            ### macOS
+            Download the `.dmg` file and drag to Applications
           files: |
-            artifacts/**/*.exe
-            artifacts/**/*.dmg
-            artifacts/**/*.AppImage
-            artifacts/**/authron-backend*
+            artifacts/*.exe
+            artifacts/*.dmg
+            artifacts/*.AppImage
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
