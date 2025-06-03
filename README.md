@@ -587,7 +587,6 @@ Special thanks to:
 ### Community Support
 
 - **GitHub Issues**: [Report bugs and request features](https://github.com/niklastech/authron/issues)
-- **GitHub Discussions**: [Ask questions and share ideas](https://github.com/niklastech/authron/discussions)
 
 ### Professional Support
 
