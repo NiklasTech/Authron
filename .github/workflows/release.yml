@@ -1,93 +1,190 @@
-name: Auto Release
+# (See previous message for full content – inserting it here for file creation)
+
+name: Build and Release
 
 on:
   push:
     tags:
-      - 'v*'
+      - "v*"
 
 jobs:
-  build-and-release:
+  build-linux:
     runs-on: ubuntu-latest
-    
     steps:
-    - uses: actions/checkout@v4
-    
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.12'
-    
-    - name: Set up Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '20'
-    
-    - name: Install Backend Dependencies
-      run: |
-        cd backend
-        python -m venv venv
-        source venv/bin/activate
-        pip install -r requirements.txt
-    
-    - name: Build Backend
-      run: |
-        cd backend
-        source venv/bin/activate
-        python build_executable.py
-    
-    - name: Install Frontend Dependencies
-      run: |
-        cd frontend
-        npm install
-    
-    - name: Build Frontend
-      run: |
-        cd frontend
-        npm run build
-    
-    - name: Build Electron Apps
-      run: |
-        cd frontend
-        npm run build-electron
-    
-    - name: Create Release
-      uses: softprops/action-gh-release@v1
-      with:
-        name: Authron ${{ github.ref_name }}
-        body: |
-          # 🎉 Authron ${{ github.ref_name }}
-          
-          ## ✨ Features
-          - 🔐 Secure password storage with AES-256 encryption
-          - 🔧 Password generator with customizable settings
-          - 🗂️ Categories and favorites for better organization
-          - 📊 Password strength analysis with visual feedback
-          - 🛠️ Admin panel for user management
-          - 🔒 Two-factor authentication (2FA/TOTP)
-          - 🌐 Multi-language support (German/English)
-          - 💡 Modern, responsive UI
-          - ⏱️ Auto-logout after inactivity
-          - 🧩 TOTP generator for external services
-          - 📥 Import/Export passwords
-          - �� Password sharing with trusted contacts
-          - 🖥️ Desktop app with Electron
-          
-          ## 📦 Downloads
-          - **Windows:** `Authron-Setup-*.exe`
-          - **macOS:** `Authron-*.dmg`
-          - **Linux:** `Authron-*.AppImage`
-          - **Web/Server:** `authron-backend` + `dist.zip`
-          
-          ## 🔐 Default Admin Account
-          - Email: `admin@example.com`
-          - Password: `Admin@1234`
-        files: |
-          dist/authron-backend*
-          frontend/dist-electron/*.exe
-          frontend/dist-electron/*.dmg
-          frontend/dist-electron/*.AppImage
-          frontend/dist-electron/*.zip
-        draft: false
-        prerelease: false
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.12"
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Install Backend Dependencies
+        run: |
+          cd backend
+          python -m venv venv
+          source venv/bin/activate
+          pip install -r requirements.txt
+      - name: Build Backend Executable
+        run: |
+          cd backend
+          source venv/bin/activate
+          python build_executable.py
+      - name: Install Frontend Dependencies
+        run: |
+          cd frontend
+          npm install
+      - name: Build Frontend
+        run: |
+          cd frontend
+          npm run build
+      - name: Build Electron Linux
+        run: |
+          cd frontend
+          npm run build-electron
+      - name: Upload Linux Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: linux-builds
+          path: |
+            dist/authron-backend
+            frontend/dist-electron/*.AppImage
+
+  build-windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.12"
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Install Backend Dependencies
+        run: |
+          cd backend
+          python -m venv venv
+          venv\Scripts\activate
+          pip install -r requirements.txt
+      - name: Build Backend Executable
+        run: |
+          cd backend
+          venv\Scripts\activate
+          python build_executable.py
+      - name: Install Frontend Dependencies
+        run: |
+          cd frontend
+          npm install
+      - name: Build Frontend
+        run: |
+          cd frontend
+          npm run build
+      - name: Build Electron Windows
+        run: |
+          cd frontend
+          npm run build-electron
+      - name: Upload Windows Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: windows-builds
+          path: |
+            dist/authron-backend.exe
+            frontend/dist-electron/*.exe
+
+  build-macos:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.12"
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Install Backend Dependencies
+        run: |
+          cd backend
+          python -m venv venv
+          source venv/bin/activate
+          pip install -r requirements.txt
+      - name: Build Backend Executable
+        run: |
+          cd backend
+          source venv/bin/activate
+          python build_executable.py
+      - name: Install Frontend Dependencies
+        run: |
+          cd frontend
+          npm install
+      - name: Build Frontend
+        run: |
+          cd frontend
+          npm run build
+      - name: Build Electron macOS
+        run: |
+          cd frontend
+          npm run build-electron
+      - name: Upload macOS Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: macos-builds
+          path: |
+            dist/authron-backend
+            frontend/dist-electron/*.dmg
+
+  create-release:
+    needs: [build-linux, build-windows, build-macos]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          merge-multiple: true
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          name: Authron ${{ github.ref_name }}
+          body: |
+            # 🎉 Authron ${{ github.ref_name }}
+
+            ## ✨ Features
+            - 🔐 Secure password storage with AES-256 encryption
+            - 🔧 Customizable password generator
+            - 🗂️ Categories and favorites for better organization
+            - 📊 Password strength analysis with visual feedback
+            - 🛠️ Admin panel for user management
+            - 🔒 Two-factor authentication (2FA/TOTP)
+            - 🌐 Multi-language support (English/German)
+            - 💡 Modern, responsive UI
+            - ⏱️ Auto logout after inactivity
+            - 🧩 TOTP generator for external services
+            - 📥 Import/export of passwords
+            - 🤝 Password sharing with trusted contacts
+            - 🖥️ Desktop app with Electron
+
+            ## 📦 Downloads
+            - **Windows:** `*.exe` (Desktop app + server)
+            - **macOS:** `*.dmg` (Desktop app + server)
+            - **Linux:** `*.AppImage` (Desktop app + server)
+
+            ## 🔐 Default Admin Account
+            - Email: `admin@example.com`
+            - Password: `Admin@1234`
+
+            ## 🚀 Installation
+            - **Desktop app:** Just download and run the appropriate file
+            - **Web server:** Download and run the backend file, then open your browser
+          files: |
+            authron-backend*
+            *.exe
+            *.dmg
+            *.AppImage
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
